@@ -1,7 +1,14 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+    var objecte : ObjecteGeometric = ObjecteGeometric(2, 3)
+    objecte.setColor("Blau")
+    println(objecte.toString())
+    var cercle : Cercle = Cercle(2, 3, 3.0)
+    println(cercle.toString())
+    var rectangle : Rectangle = Rectangle(0, 1, 3.0, 6.0)
+    println(rectangle.toString())
+    var triangle : Triangle = Triangle(8, 5, 2.0, 4.0)
+    println(triangle.toString())
+    var quadrat : Quadrat = Quadrat(1, 9, 2.0, 2.0)
+    println(quadrat.toString())
 }
